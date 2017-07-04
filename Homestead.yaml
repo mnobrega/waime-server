@@ -1,0 +1,19 @@
+ip: 192.168.10.15
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: 'C:\Users\mnobrega\workspace\waime-server'
+        to: /home/vagrant/Code/waime-server
+sites:
+    -
+        map: waime-server.app
+        to: /home/vagrant/Code/waime-server/public
+databases:
+    - homestead
+name: waime-server
+hostname: waime-server
