@@ -11,3 +11,7 @@ cd ~/Code/waime-server
 #postgres
 sudo cp .provision/postgresql/pg_hba.conf /etc/postgresql/9.5/main/pg_hba.conf
 sudo service postgresql restart
+sudo apt-get update
+sudo apt-get install -y postgis
+PGPASSWORD=secret psql -U homestead -h localhost -c "CREATE EXTENSION postgis"
+

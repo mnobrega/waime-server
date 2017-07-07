@@ -180,6 +180,11 @@ return [
 
         App\Foundation\ServiceProvider::class,
         Lucid\Console\LucidServiceProvider::class,
+
+        /*
+         * Database Service Providers...
+         */
+        Phaza\LaravelPostgis\DatabaseServiceProvider::class,
     ],
 
     /*
