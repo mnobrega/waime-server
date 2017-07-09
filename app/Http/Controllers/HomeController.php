@@ -27,16 +27,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $location1 = new Location();
-        $location1->name = 'Googleplex';
-        $location1->address = '1600 Amphitheatre Pkwy Mountain View, CA 94042';
-        $location1->location = new Point(37.422156, -122.084321);
-        $location1->save();
-
-        $location2 = Location::first();
-        dd($location2);
-
-
         return view('home');
     }
 }

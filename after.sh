@@ -8,7 +8,7 @@
 echo 'export PATH="./vendor/bin:$PATH"' >>  ~/.bashrc
 cd ~/Code/waime-server
 
-#postgres
+#postgres + postgis
 sudo cp .provision/postgresql/pg_hba.conf /etc/postgresql/9.5/main/pg_hba.conf
 sudo service postgresql restart
 sudo apt-get update
